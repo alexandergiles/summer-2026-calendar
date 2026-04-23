@@ -33,11 +33,14 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .b-visit { background: #FAECE7; color: #712B13; }
 .b-music { background: #E1F5EE; color: #085041; }
 .b-school { background: #E6F1FB; color: #0C447C; }
+.b-sport { background: #FFF2D9; color: #7A5317; }
+.bar.low { top: 52px; }
 .dot { position: absolute; top: 36px; left: 6px; right: 6px; font-size: 10px; line-height: 1.3; padding: 2px 7px; border-radius: 8px; font-weight: 500; }
 .d-music { background: #E1F5EE; color: #085041; }
 .d-school { background: #E6F1FB; color: #0C447C; }
 .d-holiday { background: #F1EFE8; color: #444441; }
 .s2 { top: 56px; }
+.s3 { top: 76px; }
 .cal td:has(.b-trip) { background-color: #FAF9FE; }
 .cal td:has(.b-visit) { background-color: #FDF6F3; }
 .cal td:has(.b-school) { background-color: #F3F8FD; }
@@ -48,6 +51,11 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .notes-area { height: 0.9in; background-image: repeating-linear-gradient(transparent, transparent 28px, #e8e8e8 28px, #e8e8e8 28.5px); margin-top: 6px; }
 .proof-stamp { position: fixed; bottom: 0.15in; right: 0.4in; font-size: 8px; color: #aaa; letter-spacing: 1px; text-transform: uppercase; }
 .pb { page-break-before: always; }
+.inset-img { position: absolute; bottom: 4px; right: 4px; width: 42px; height: 42px; object-fit: cover; border-radius: 4px; z-index: 4; box-shadow: 0 1px 2px rgba(0,0,0,0.12); }
+.flag-be { display: inline-block; width: 14px; height: 10px; margin-left: 4px; vertical-align: middle; background: linear-gradient(to right, #000 33.33%, #FAE042 33.33%, #FAE042 66.66%, #ED2939 66.66%); border: 0.5px solid rgba(0,0,0,0.15); border-radius: 1px; }
+.flag-nl { display: inline-block; width: 14px; height: 10px; margin-left: 4px; vertical-align: middle; background: linear-gradient(to bottom, #AE1C28 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #21468B 66.66%); border: 0.5px solid rgba(0,0,0,0.15); border-radius: 1px; }
+.d-nats { background: #FCE8EA; color: #AB0003; }
+.logo-inline { height: 11px; width: 11px; vertical-align: -1px; margin-right: 3px; display: inline-block; }
 @media print { .proof-stamp { display: block; } }
 </style>
 </head>
@@ -56,7 +64,7 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 <div class="title-block">
 <div class="title">Summer</div>
 <div class="year">2026</div>
-<div class="range">May 22 — August 31</div>
+<div class="range">April 22 — August 31</div>
 </div>
 
 <div class="legend">
@@ -67,16 +75,51 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 <div><span style="background:#B4B2A9"></span>Holidays</div>
 </div>
 
-<div class="mhead"><div class="mname">May</div><div class="mtag">final week</div><div class="mline"></div></div>
+<div class="mhead"><div class="mname">April</div><div class="mline"></div></div>
+<table class="cal">
+<thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead>
+<tbody>
+<tr><td class="bk"></td><td class="bk"></td><td class="bk"></td>
+<td><div class="dn">22</div></td>
+<td><div class="dn">23</div></td>
+<td><div class="dn">24</div><div class="bar b-visit start">Melissa visit</div><div class="dot d-holiday s2">UA4291 · BUF 2:54p → IAD 4:13p</div></td>
+<td><div class="dn">25</div><div class="bar b-visit"></div></td></tr>
+<tr><td><div class="dn">26</div><div class="bar b-visit cont">Melissa visit</div></td>
+<td><div class="dn">27</div><div class="bar b-visit end"></div><div class="dot d-holiday s2">UA4335 · IAD 12:48p → BUF 2:12p</div></td>
+<td><div class="dn">28</div></td>
+<td><div class="dn">29</div><div class="bar b-trip start">Phish Vegas · Sphere</div></td>
+<td><div class="dn">30</div><div class="bar b-trip"></div><img class="inset-img" src="images/sphere-vegas.jpg" alt="Sphere · Las Vegas"></td>
+<td class="bk"></td><td class="bk"></td></tr>
+</tbody></table>
+
+<div class="pb"></div>
+
+<div class="mhead"><div class="mname">May</div><div class="mline"></div></div>
 <table class="cal">
 <thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead>
 <tbody>
 <tr><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td>
+<td><div class="dn">1</div><div class="bar b-trip end">Phish Vegas</div></td>
+<td><div class="dn">2</div></td></tr>
+<tr><td><div class="dn">3</div><div class="dot d-holiday">Harry's Birthday · 10a–12p</div></td><td><div class="dn">4</div></td><td><div class="dn">5</div></td><td><div class="dn">6</div></td><td><div class="dn">7</div></td>
+<td><div class="dn">8</div><div class="bar b-visit start">Shane &amp; Jocelyn</div></td>
+<td><div class="dn">9</div><div class="bar b-visit"></div></td></tr>
+<tr><td><div class="dn">10</div><div class="bar b-visit end">Shane &amp; Jocelyn</div></td>
+<td><div class="dn">11</div><div class="dot d-holiday">Mother's Day</div></td>
+<td><div class="dn">12</div></td><td><div class="dn">13</div><div class="dot d-school">Bike to School Day</div></td><td><div class="dn">14</div></td><td><div class="dn">15</div></td>
+<td><div class="dn">16</div><div class="bar b-trip start">Alex — Dad 70th · Banff</div><div class="dot d-holiday s2">AC8781 · DCA 6:59a → YYZ 8:01a</div></td></tr>
+<tr><td><div class="dn">17</div><div class="bar b-trip cont">Alex — Dad 70th · Banff</div><div class="dot d-holiday s2">Birdie Birthday at Jolly Yolly · 9:30a</div></td>
+<td><div class="dn">18</div><div class="bar b-trip"></div></td>
+<td><div class="dn">19</div><div class="bar b-trip end"></div><div class="dot d-holiday s2">AC150 · YYC 5:15p → YYZ 10:55p</div></td>
+<td><div class="dn">20</div></td>
+<td><div class="dn">21</div></td>
 <td><div class="dn">22</div><a href="https://vivavienna.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-visit start">Dufords visit · Viva Vienna</div></a></td>
 <td><div class="dn">23</div><a href="https://vivavienna.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-visit"></div></a><a href="https://www.wolftrap.org/show/26filene/052126/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music s2">Sting · Wolf Trap</div></a></td></tr>
 <tr><td><div class="dn">24</div><a href="https://vivavienna.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-visit cont">Dufords visit · Viva Vienna</div></a></td>
-<td><div class="dn">25</div><a href="https://vivavienna.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-visit end"></div></a><div class="dot d-holiday s2">Memorial Day</div></td>
-<td><div class="dn">26</div></td><td><div class="dn">27</div></td><td><div class="dn">28</div></td><td><div class="dn">29</div></td><td><div class="dn">30</div></td></tr>
+<td><div class="dn">25</div><a href="https://vivavienna.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-visit end"></div></a><div class="dot d-holiday s2">Memorial Day</div><div class="dot d-school s3">FCPS Holiday</div></td>
+<td><div class="dn">26</div><div class="dot d-holiday">CH Swim Team Tryouts</div><div class="dot d-school s2">FCPS Holiday</div></td>
+<td><div class="dn">27</div><div class="dot d-holiday">CH Swim Team Practice</div><div class="dot d-school s2">FCPS Holiday</div></td>
+<td><div class="dn">28</div><div class="dot d-holiday">CH Dive Team Practice</div></td><td><div class="dn">29</div></td><td><div class="dn">30</div></td></tr>
 <tr><td><div class="dn">31</div></td><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td></tr>
 </tbody></table>
 
@@ -95,23 +138,23 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 <td><div class="dn">9</div><a href="https://www.wolftrap.org/show/26filene/060926/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music">John Prine · Wolf Trap</div></a></td>
 <td><div class="dn">10</div></td>
 <td><div class="dn">11</div><div class="bar b-visit start">Melissa visiting</div><div class="dot d-music s2">Ray Bull · Atlantis</div></td>
-<td><div class="dn">12</div><div class="bar b-visit"></div></td><td><div class="dn">13</div><div class="bar b-visit"></div></td></tr>
+<td><div class="dn">12</div><div class="bar b-visit"></div></td><td><div class="dn">13</div><div class="bar b-visit"></div><div class="dot d-nats s2"><img class="logo-inline" src="images/nats-cap.svg" alt="">Nats vs Mariners · 4:05p</div></td></tr>
 <tr><td><div class="dn">14</div><div class="bar b-visit end">Melissa</div><a href="https://www.wolftrap.org/show/26filene/061426/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music s2">Orville Peck · Wolf Trap</div></a></td>
 <td><div class="dn">15</div></td><td><div class="dn">16</div></td>
 <td><div class="dn">17</div><div class="dot d-school">Last day of school</div></td>
 <td><div class="dn">18</div></td>
 <td><div class="dn">19</div><div class="dot d-holiday">Juneteenth</div></td>
 <td><div class="dn">20</div><div class="dot d-holiday">Simon's birthday party</div></td></tr>
-<tr><td><div class="dn">21</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip start">Family vacation · Belgium &amp; Netherlands</div></a></td>
-<td><div class="dn">22</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
-<td><div class="dn">23</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
-<td><div class="dn">24</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
-<td><div class="dn">25</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a><div class="dot d-holiday s2">Simon's 7th birthday</div></td>
-<td><div class="dn">26</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
-<td><div class="dn">27</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td></tr>
-<tr><td><div class="dn">28</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip cont">Belgium &amp; Netherlands</div></a></td>
-<td><div class="dn">29</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
-<td><div class="dn">30</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip end"></div></a></td>
+<tr><td><div class="dn">21</div><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip start">Family vacation · Belgium &amp; Netherlands</div></a><div class="dot d-holiday s2">UA946 · IAD 5:30p → AMS 7:35a</div></td>
+<td><div class="dn">22</div><span class="flag-be" title="Belgium"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip cont">Refuge du Saule check in</div></a><img class="inset-img" src="images/rental-burdinne.jpg" alt="Refuge du Saule"></td>
+<td><div class="dn">23</div><span class="flag-be" title="Belgium"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
+<td><div class="dn">24</div><span class="flag-be" title="Belgium"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
+<td><div class="dn">25</div><span class="flag-be" title="Belgium"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a><div class="dot d-holiday s2">Simon's 7th birthday</div></td>
+<td><div class="dn">26</div><span class="flag-be" title="Belgium"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
+<td><div class="dn">27</div><span class="flag-nl" title="Netherlands"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td></tr>
+<tr><td><div class="dn">28</div><span class="flag-nl" title="Netherlands"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip cont">Belgium &amp; Netherlands</div></a></td>
+<td><div class="dn">29</div><span class="flag-nl" title="Netherlands"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
+<td><div class="dn">30</div><span class="flag-nl" title="Netherlands"></span><a href="https://alexandergiles.github.io/benelux-trip/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip end"></div></a></td>
 <td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td></tr>
 </tbody></table>
 
@@ -122,27 +165,29 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 <thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead>
 <tbody>
 <tr><td class="bk"></td><td class="bk"></td><td class="bk"></td>
-<td><div class="dn">1</div><a href="https://www.wolftrap.org/show/26filene/070126/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music">Donato &amp; Tuttle · Wolf Trap</div></a></td><td><div class="dn">2</div></td>
-<td><div class="dn">3</div><div class="bar b-trip start">Lake weekend · Charlotte, NC</div></td>
+<td><div class="dn">1</div><span class="flag-nl" title="Netherlands"></span><div class="dot d-holiday">KL0651 · AMS 1:20p → IAD 4:05p</div></td><td><div class="dn">2</div><div class="bar b-trip start">Lake weekend · Charlotte, NC</div></td>
+<td><div class="dn">3</div><div class="bar b-trip"></div></td>
 <td><div class="dn">4</div><div class="bar b-trip"></div></td></tr>
 <tr><td><div class="dn">5</div><div class="bar b-trip end"></div></td>
-<td><div class="dn">6</div></td>
-<td><div class="dn">7</div><a href="https://www.wolftrap.org/show/26filene/070726/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music">Lizzo + NSO · Wolf Trap</div></a></td>
-<td><div class="dn">8</div></td><td><div class="dn">9</div></td><td><div class="dn">10</div></td>
+<td><div class="dn">6</div><div class="bar b-sport start">CH Swim Camp (Simon)</div></td>
+<td><div class="dn">7</div><div class="bar b-sport"></div><a href="https://www.wolftrap.org/show/26filene/070726/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music s2">Lizzo + NSO · Wolf Trap</div></a></td>
+<td><div class="dn">8</div><div class="bar b-sport"></div></td>
+<td><div class="dn">9</div><div class="bar b-sport"></div></td>
+<td><div class="dn">10</div><div class="bar b-sport end"></div></td>
 <td><div class="dn">11</div><a href="https://www.wolftrap.org/show/26filene/071126/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music">NSO: Little Mermaid · Wolf Trap</div></a></td></tr>
-<tr><td><div class="dn">12</div></td><td><div class="dn">13</div></td><td><div class="dn">14</div></td>
+<tr><td><div class="dn">12</div><div class="bar b-trip start">Clayton</div><div class="dot d-holiday s2">MX634 · IAD 9:15a → OGS 10:46a</div></td><td><div class="dn">13</div><div class="bar b-trip"></div></td><td><div class="dn">14</div><div class="bar b-trip end"></div></td>
 <td><div class="dn">15</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip start">Grassroots · Trumansburg, NY</div></a></td>
-<td><div class="dn">16</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a><a href="https://www.wolftrap.org/show/26filene/071626/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music s2">Alison Krauss · Wolf Trap</div></a></td>
-<td><div class="dn">17</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a><a href="https://www.wolftrap.org/show/26filene/071626/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music s2">Alison Krauss · Wolf Trap</div></a></td>
+<td><div class="dn">16</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
+<td><div class="dn">17</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td>
 <td><div class="dn">18</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td></tr>
-<tr><td><div class="dn">19</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip end">Grassroots</div></a><div class="dot d-music s2">Phish · MPP</div></td>
-<td><div class="dn">20</div><div class="bar b-trip start">Gileses in Clayton</div></td>
-<td><div class="dn">21</div><div class="bar b-trip"></div></td>
-<td><div class="dn">22</div><div class="bar b-trip"></div><a href="https://www.wolftrap.org/show/26filene/072226/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music s2">Tori Amos · Wolf Trap</div></a></td>
-<td><div class="dn">23</div><div class="bar b-trip"></div></td>
-<td><div class="dn">24</div><div class="bar b-trip"></div></td>
+<tr><td><div class="dn">19</div><a href="https://www.grassrootsfest.org/" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip end">Grassroots</div></a></td>
+<td><div class="dn">20</div><div class="bar b-trip start">Clayton</div><div class="bar b-sport low start">Theatre Camp (Simon)</div></td>
+<td><div class="dn">21</div><div class="bar b-trip"></div><div class="bar b-sport low"></div></td>
+<td><div class="dn">22</div><div class="bar b-trip"></div><div class="bar b-sport low"></div></td>
+<td><div class="dn">23</div><div class="bar b-trip"></div><div class="bar b-sport low"></div></td>
+<td><div class="dn">24</div><div class="bar b-trip"></div><div class="bar b-sport low end"></div></td>
 <td><div class="dn">25</div><div class="bar b-trip"></div></td></tr>
-<tr><td><div class="dn">26</div><div class="bar b-trip cont">Gileses in Clayton</div><div class="dot d-holiday s2">Penelope's 3rd birthday</div></td><td><div class="dn">27</div><div class="bar b-trip end"></div></td><td><div class="dn">28</div></td>
+<tr><td><div class="dn">26</div><div class="bar b-trip end">Clayton</div><div class="dot d-holiday s2">Penelope's 3rd birthday</div><div class="dot d-holiday s3">MX640 · OGS 11:51a → IAD 1:30p</div></td><td><div class="dn">27</div></td><td><div class="dn">28</div></td>
 <td><div class="dn">29</div><a href="https://www.wolftrap.org/show/26filene/072926/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music">Gov't Mule · Wolf Trap</div></a></td>
 <td><div class="dn">30</div><a href="https://www.wolftrap.org/show/26filene/073026/" target="_blank" rel="noopener" class="evlink"><div class="dot d-music">Jason Isbell · Wolf Trap</div></a></td>
 <td><div class="dn">31</div><div class="bar b-visit start">Steve &amp; Hannah visit</div></td><td class="bk"></td></tr>
@@ -156,7 +201,13 @@ table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
 <tbody>
 <tr><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td><td class="bk"></td>
 <td><div class="dn">1</div><div class="bar b-visit cont">Steve &amp; Hannah visit</div><div class="dot d-holiday s2">Steve &amp; Hannah party</div></td></tr>
-<tr><td><div class="dn">2</div><div class="bar b-visit cont">Steve &amp; Hannah visit</div></td><td><div class="dn">3</div><div class="bar b-visit end"></div></td><td><div class="dn">4</div></td><td><div class="dn">5</div></td><td><div class="dn">6</div></td><td><div class="dn">7</div></td><td><div class="dn">8</div></td></tr>
+<tr><td><div class="dn">2</div><div class="bar b-visit cont">Steve &amp; Hannah visit</div></td>
+<td><div class="dn">3</div><div class="bar b-visit end"></div><div class="bar b-sport low start">Hockey Camp (Simon)</div></td>
+<td><div class="dn">4</div><div class="bar b-sport low"></div></td>
+<td><div class="dn">5</div><div class="bar b-sport low"></div></td>
+<td><div class="dn">6</div><div class="bar b-sport low"></div></td>
+<td><div class="dn">7</div><div class="bar b-sport low end"></div></td>
+<td><div class="dn">8</div></td></tr>
 <tr><td><div class="dn">9</div></td><td><div class="dn">10</div><div class="dot d-holiday">Steve &amp; Hannah → Taiwan</div></td><td><div class="dn">11</div></td><td><div class="dn">12</div></td><td><div class="dn">13</div></td>
 <td><div class="dn">14</div><a href="https://www.zola.com/wedding/nissel-campos" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip start">Seattle · Becky &amp; Jason wedding</div></a></td>
 <td><div class="dn">15</div><a href="https://www.zola.com/wedding/nissel-campos" target="_blank" rel="noopener" class="evlink"><div class="bar b-trip"></div></a></td></tr>
